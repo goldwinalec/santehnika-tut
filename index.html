@@ -20,9 +20,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="top-header__logo">
-            <img src="img/groho-logo.png" alt="" />
-          </div>
+          <img class="top-header__logo" src="img/groho-logo.png" alt="" />
         </div>
       </div>
     </div>
@@ -30,15 +28,15 @@
   <section class="main-header">
     <div class="container">
       <div class="main-header__content">
-        <div class="main-header__logo">
-          <a href="#"><img src="img/main-logo.svg" alt="" /></a>
+          <a class="main-header__logo" href="#"><img class="main-header__img" src="img/main-logo.svg" alt="" /></a>
+        <div class="main-header__contacts">
+          <div class="main-header__contacts-text">
+            8 495 565-35-25<span class="main-header__info">Каждый день с 9 до 22</span>
+          </div>
+          <a href="#" class="main-header__btn">Заказать звонок</a>
         </div>
-        <div class="main-header__contacts-text">
-          8 495 565-35-25<span class="main-header__info">Каждый день с 9 до 22</span>
-        </div>
-        <a href="#" class="main-header__btn">Заказать звонок</a>
         <div class="main-header__brand">
-          <img src="img/brand-logo.png" alt="" />
+          <img class="main-header__brand-img" src="img/brand-logo.png" alt="" />
         </div>
       </div>
     </div>
@@ -55,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="catalog-slider">
         <div class="col-sm-6 col-lg-3">
           <div class="popular-sections__item">
             <div class="popular-sections__item-img">
@@ -96,7 +94,7 @@
   <section class="popular-collections">
     <div class="container">
       <div class="popular-collections__title title">Популярные коллекции</div>
-      <div class="row">
+      <div class="row" id="catalog-slider">
         <div class="col-sm-6 col-lg-3">
           <div class="popular-collections__item">
             <div class="popular-collections__item-img">
@@ -271,6 +269,7 @@
   </footer>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -32,8 +32,10 @@ a {
   padding: 20px 0; }
 
 .top-header__logo {
-  display: flex;
-  justify-content: center; }
+  height: 64px;
+  width: 160px;
+  margin: 0 auto;
+  display: block; }
 
 .main-header {
   padding: 20px 0; }
@@ -52,14 +54,19 @@ a {
 .main-header__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.main-header__contacts {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
   align-items: center; }
 
 .main-header__contacts-text {
-  margin-left: auto;
   margin-right: 30px; }
 
 .main-header__btn {
-  margin-right: auto;
   width: 125px;
   color: #00a7df;
   font-size: 13px;
@@ -186,13 +193,65 @@ a {
     padding-top: 35px;
     border-top: 1px solid #eee; }
 
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0; }
+
+.slick-dots button {
+  background-color: #808080;
+  border: none;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  text-indent: -999px;
+  outline: none;
+  margin-right: 5px; }
+
+.slick-active button {
+  background-color: #142f4f; }
+
 @media (max-width: 991px) {
   .popular-sections__item,
   .popular-collections__item {
     margin-top: 30px; } }
+@media (max-width: 768px) {
+  .main-header__content {
+    justify-content: space-between; }
+
+  .main-header__contacts {
+    margin-right: auto; }
+
+  .main-header__contacts-text {
+    margin-right: 15px; }
+
+  .main-header__img {
+    width: 180px; }
+
+  .main-header__brand-img {
+    width: 55px; }
+
+  .main-header__contacts {
+    margin-right: 10px;
+    margin-left: 10px; } }
 @media (max-width: 576px) {
-  .popular-sections__item,
-  .popular-collections__item {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto; } }
+  .main-header__content {
+    flex-direction: column;
+    justify-content: center; }
+
+  .main-header__contacts {
+    margin-right: 0;
+    margin-left: 0; }
+
+  .main-header__contacts-text {
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+
+  .main-header__img {
+    width: 252px; }
+
+  .main-header__brand-img {
+    width: 104px; } }

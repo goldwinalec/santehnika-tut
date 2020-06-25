@@ -42,8 +42,10 @@ a {
 }
 
 .top-header__logo {
-  display: flex;
-  justify-content: center;
+  height: 64px;
+  width: 160px;
+  margin: 0 auto;
+  display: block;
 }
 
 .main-header {
@@ -69,15 +71,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-header__contacts {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .main-header__contacts-text {
-  margin-left: auto;
   margin-right: 30px;
 }
 
 .main-header__btn {
-  margin-right: auto;
   width: 125px;
   color: $light-blue;
   font-size: 13px;
@@ -250,6 +258,29 @@ a {
     padding-top: 35px;
     border-top: 1px solid #eee;
   }
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.slick-dots button {
+  background-color: $gray;
+  border: none;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  text-indent: -999px;
+  outline: none;
+  margin-right: 5px;
+}
+
+.slick-active button {
+  background-color: $accent;
 }
 
 @import "media";
