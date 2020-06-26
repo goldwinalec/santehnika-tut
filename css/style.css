@@ -169,6 +169,10 @@ a {
   background-color: #142f4f;
   padding: 10px 10px; }
 
+.design-section___inner {
+  display: grid;
+  grid-template-columns: 5fr 7fr; }
+
 .design-section {
   margin-bottom: 65px; }
   .design-section img {
