@@ -87,15 +87,18 @@ a {
 
 .main-header__btn {
   width: 125px;
+  height: 35px;
   color: $light-blue;
   font-size: 13px;
   font-weight: normal;
   border: 1px solid $light-blue;
   border-radius: 4px;
-  padding: 9px 10px;
   line-height: normal;
   transition: 0.1s ease-in;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     color: #ffffff;
     background-color: $light-blue;

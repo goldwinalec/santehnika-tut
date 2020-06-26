@@ -68,15 +68,18 @@ a {
 
 .main-header__btn {
   width: 125px;
+  height: 35px;
   color: #00a7df;
   font-size: 13px;
   font-weight: normal;
   border: 1px solid #00a7df;
   border-radius: 4px;
-  padding: 9px 10px;
   line-height: normal;
   transition: 0.1s ease-in;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .main-header__btn:hover {
     color: #ffffff;
     background-color: #00a7df;
