@@ -169,28 +169,46 @@ a {
   background-color: #142f4f;
   padding: 10px 10px; }
 
-.design-section___inner {
+.design-section__inner {
   display: grid;
-  grid-template-columns: 5fr 7fr; }
+  grid-template-columns: 5fr 7fr;
+  grid-gap: 15px; }
 
 .design-section {
   margin-bottom: 65px; }
-  .design-section img {
-    max-width: 100%;
-    margin-bottom: 15px; }
+  .design-section__img {
+    width: 100%;
+    margin-bottom: 15px;
+    float: left;
+    z-index: 1; }
   .design-section__text {
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin: 0;
+    z-index: 2; }
   .design-section__title {
     margin-top: 35px;
     margin-bottom: 25px;
     text-align: left; }
 
+.technologies-section__inner {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-auto-columns: dense;
+  grid-gap: 15px; }
+
 .technologies-section {
   margin-bottom: 85px; }
-  .technologies-section img {
-    max-width: 100%; }
+  .technologies-section__img {
+    max-width: 100%;
+    display: block;
+    float: right;
+    grid-column: 2;
+    grid-row: 1; }
   .technologies-section__text {
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1; }
   .technologies-section__title {
     margin-bottom: 20px;
     text-align: left;
@@ -220,7 +238,23 @@ a {
 @media (max-width: 991px) {
   .popular-sections__item,
   .popular-collections__item {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .design-section__inner,
+  .technologies-section__inner {
+    display: block; }
+
+  .design-section__img {
+    width: 300px;
+    margin-right: 15px; }
+
+  .technologies-section__img {
+    width: 300px;
+    margin-left: 15px; }
+
+  .design-section__text,
+  .technologies-section__text {
+    font-size: 16px; } }
 @media (max-width: 768px) {
   .main-header__content {
     justify-content: space-between; }
@@ -258,4 +292,11 @@ a {
     width: 252px; }
 
   .main-header__brand-img {
-    width: 104px; } }
+    width: 104px; }
+
+  .design-section__img,
+  .technologies-section__img {
+    float: none;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px; } }

@@ -1,7 +1,23 @@
 @media (max-width: 991px) {
   .popular-sections__item,
   .popular-collections__item {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .design-section__inner,
+  .technologies-section__inner {
+    display: block; }
+
+  .design-section__img {
+    width: 300px;
+    margin-right: 15px; }
+
+  .technologies-section__img {
+    width: 300px;
+    margin-left: 15px; }
+
+  .design-section__text,
+  .technologies-section__text {
+    font-size: 16px; } }
 @media (max-width: 768px) {
   .main-header__content {
     justify-content: space-between; }
@@ -39,4 +55,11 @@
     width: 252px; }
 
   .main-header__brand-img {
-    width: 104px; } }
+    width: 104px; }
+
+  .design-section__img,
+  .technologies-section__img {
+    float: none;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px; } }
