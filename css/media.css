@@ -1,65 +1,92 @@
 @media (max-width: 991px) {
   .popular-sections__item,
   .popular-collections__item {
-    margin-top: 30px; }
-
+    margin-top: 30px;
+  }
   .design-section__inner,
   .technologies-section__inner {
-    display: block; }
-
+    display: block;
+  }
   .design-section__img {
     width: 300px;
-    margin-right: 15px; }
-
+    margin-right: 15px;
+  }
   .technologies-section__img {
     width: 300px;
-    margin-left: 15px; }
-
+    margin-left: 15px;
+  }
   .design-section__text,
   .technologies-section__text {
-    font-size: 16px; } }
+    font-size: 16px;
+  }
+  .header-banner {
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .main-header__content {
-    justify-content: space-between; }
-
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .main-header__contacts {
-    margin-right: auto; }
-
+    margin-right: auto;
+  }
   .main-header__contacts-text {
-    margin-right: 15px; }
-
+    margin-right: 15px;
+  }
   .main-header__img {
-    width: 180px; }
-
+    width: 180px;
+  }
   .main-header__brand-img {
-    width: 58px; }
-
+    width: 58px;
+  }
   .main-header__contacts {
     margin-right: 10px;
-    margin-left: 10px; } }
+    margin-left: 10px;
+  }
+  .header-banner {
+    height: 150px;
+  }
+}
+
 @media (max-width: 576px) {
   .main-header__content {
-    flex-direction: column;
-    justify-content: center; }
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .main-header__contacts {
     margin-right: 0;
-    margin-left: 0; }
-
+    margin-left: 0;
+  }
   .main-header__contacts-text {
     margin-right: 15px;
     margin-top: 15px;
-    margin-bottom: 15px; }
-
+    margin-bottom: 15px;
+  }
   .main-header__img {
-    width: 252px; }
-
+    width: 252px;
+  }
   .main-header__brand-img {
-    width: 104px; }
-
+    width: 104px;
+  }
   .design-section__img,
   .technologies-section__img {
     float: none;
     width: 100%;
     margin: 0;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px;
+  }
+  .header-banner {
+    height: 100px;
+  }
+}

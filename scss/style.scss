@@ -107,8 +107,13 @@ a {
 }
 
 .header-banner {
+  height: 274px;
   padding: 0;
   width: 100%;
+  background-image: url('/img/banner.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .footer {
